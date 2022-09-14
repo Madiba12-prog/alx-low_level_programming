@@ -14,18 +14,18 @@ int main(void)
 	int sum = 0;
 	int lim = 1024;
 
-	while (i == 00
+	while (i == 0)
 	{
 	 	if (m3 < lim)
 		{
 			sum += m3;
 			m3 += 3;
 		}
-		if (m5 < lim && (m5 % 3) != 0
+		if (m5 < lim && (m5 % 3) != 0)
 		{
 			sum += m5;
-			m5 
-		]
+			m5 += 5; 
+		}
 		else if
 		{
 			m5 += 5;
@@ -37,7 +37,5 @@ int main(void)
 	}
 	printf("%d\n", sum);
 	return (0);
-}:wq
-:wq
-:wq
+}
 
