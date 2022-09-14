@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "7-main.c"
 /**
 * print_last_digit - prints last digit of number
 * @n: number being tested
