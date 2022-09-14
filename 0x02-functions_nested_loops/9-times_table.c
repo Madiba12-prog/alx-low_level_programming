@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*times_table - print times table 
+*times_table - print times table
 * 
 *Return: void.
 */
