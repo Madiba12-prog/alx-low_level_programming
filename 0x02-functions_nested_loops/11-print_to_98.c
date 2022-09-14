@@ -2,9 +2,9 @@
 #include "stdio.h"
 
 /** 
-* print_to-98 - print all numbers provided between the provided number and 98
+* print_to_98 - print all numbers provided between the provided number and 98
 * @n: an integer to start at
-* Return:Void.
+* Return: Void.
 */
 
 void print_to_98(int n)
@@ -13,7 +13,7 @@ void print_to_98(int n)
 
 	if (n > 98)
 	{
-		for (i = n; i<=98; i--)
+		for (i = n; i >= 98; i--)
 		{
 			if (i != n)
 			{
