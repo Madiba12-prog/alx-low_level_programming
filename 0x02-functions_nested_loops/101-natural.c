@@ -22,8 +22,7 @@ int main(void)
 			m3 += 3;
 		}
 		if (m5 < lim && (m5 % 3) != 0)
-		{
-			sum += m5;
+ 	       	        sum += m5;
 			m5 += 5; 
 		}
 		else if (m5 % 3 == 0)
