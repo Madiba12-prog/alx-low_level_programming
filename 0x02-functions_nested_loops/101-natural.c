@@ -26,7 +26,7 @@ int main(void)
 			sum += m5;
 			m5 += 5; 
 		}
-		else if
+		else if (m5 % 3 == 0)
 		{
 			m5 += 5;
 		}
