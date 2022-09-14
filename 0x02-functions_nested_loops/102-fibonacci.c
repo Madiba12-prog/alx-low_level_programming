@@ -18,7 +18,7 @@ int main(void)
 	for (i = 1; i < 50; i++)
 	{
 		printf(", %lu", aft);
-		aft =+ bef;
+		aft += bef;
 		bef = aft - bef;
 	}
 	printf("\n");
