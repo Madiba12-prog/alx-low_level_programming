@@ -2,7 +2,7 @@
 
 /**
 *times_table - print times table
-* 
+*
 *Return: void.
 */
 
