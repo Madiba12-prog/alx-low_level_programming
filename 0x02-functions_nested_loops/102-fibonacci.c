@@ -21,6 +21,6 @@ int main(void)
 		aft =+ bef;
 		bef = aft - bef;
 	}
-	printf("\n');
-	return(0);
+	printf('\n');
+	return (0);
 }
