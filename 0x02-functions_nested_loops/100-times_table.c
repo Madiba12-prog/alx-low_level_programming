@@ -43,7 +43,7 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar((((j * i) / 100) % 10) + '0');
-					-putchar((((j * i) / 10) % 10) + '0');
+					_putchar((((j * i) / 10) % 10) + '0');
 					_putchar(((j * i) % 10) + '0');
 				}
 			if (j != (n))
