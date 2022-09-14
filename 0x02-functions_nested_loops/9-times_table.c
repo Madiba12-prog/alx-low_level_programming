@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* times_table - print times table 
+*times_table - print times table 
 * 
 * Return: void.
 */
@@ -10,12 +10,12 @@ void times_table(void)
 {
 	int x, y, multiplied_value;
 
-	for (y=0; y < 10; y++)
+	for (y = 0; y < 10; y++)
 	{
 		for (x = 0; x < 10; x++)
 		{
 			multiplied_value = x * y;
-			if ( x == 0)
+			if (x == 0)
 			{
 				_putchar(multiplied_value + '0');
 			}
@@ -38,4 +38,4 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}
+i}
