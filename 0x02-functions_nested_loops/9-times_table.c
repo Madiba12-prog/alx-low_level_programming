@@ -14,7 +14,7 @@ void times_table(void)
 	{
 		for (x = 0; x < 10; x++)
 		{
-			multipled_value = x * y;
+			multiplied_value = x * y;
 			if ( x == 0)
 			{
 				_putchar(multiplied_value + '0');
@@ -22,7 +22,7 @@ void times_table(void)
 			else if (multiplied_value >= 10)
 			{
 				_putchar(' ');
-				_putchar(multipled_value / 10 + '0');
+				_putchar(multiplied_value / 10 + '0');
 				_putchar(multiplied_value % 10 + '0');
 			}
 			else
