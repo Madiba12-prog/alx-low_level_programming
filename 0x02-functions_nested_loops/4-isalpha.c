@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
-* isalpha - check the code for Holberton school
+* _isalpha - check the code for Holberton school
 *
 *@c: is c an integer argument
-*
-Return: Always 0.
+*Return: Always 0.
 */
 
 int _isalpha(int c)
