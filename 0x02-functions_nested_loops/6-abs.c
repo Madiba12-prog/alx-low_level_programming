@@ -2,7 +2,7 @@
 
 /**
 * abs - returns absolute value of an int
-8 @n - integer from which to get an absolute value
+* @n - integer from which to get an absolute value
 *Return : void
 */
 
