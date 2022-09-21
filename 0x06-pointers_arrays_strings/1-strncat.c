@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
 
  * _strncat - two words
@@ -61,4 +59,5 @@ char *_strncat(char *dest, char *src, int n)
 	dest[m + i] = '\0';
 
 	return (dest);
+}
 
