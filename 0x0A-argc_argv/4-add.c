@@ -1,68 +1,32 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include "main.h"
 
 /**
- *
- *  * main - Program that takes in all integer arguments and returns the sum
- *
- *   * @argc: Number of command line arguments
- *
- *    * @argv: Array name
- *
- *     * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
- *
- *      */
+* main - adds positive numbers
+* @argv: array of pointers to strings
+* @argc: argument count
+* Return: 0 or 1
+*/
 
 int main(int argc, char *argv[])
 {
-int i, j, length, sum;
-char *ptr;
-   if (argc < 2)
-       printf("0\n");
-	   else
-	    {
-			sum=0;
-											for (i = 1; i < argc; i++)
+	int i, j, z;
+	int sum = 0;
 
-															{
-
-																			ptr = argv[i];
-
-																						length = strlen(ptr);
-
-
-
-																									for (j = 0; j < length; j++)
-
-																													{
-
-																																		if (isdigit(*(ptr + j)) == 0)
-
-																																							{
-
-																																													printf("Error\n");
-
-																																																		return (1);
-
-																																																						}
-
-																																					}
-
-
-
-																												sum += atoi(argv[i]);
-
-																														}
-
-
-
-														printf("%d\n", sum);
-
-															}
-
-						return (0);
-
+	for (j = 1; j < argc; j++)
+	{
+		for (z = 0; argv[j][z] != '\0'; z++)
+		{
+			if (argv[j][z] < '0'															|| argv[j][z] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+	}
+	for (i = 1; i < argc; i++)
+		sum += atoi(argv[i]);
+	printf("%d\n", sum);
+	return (0);
 }
