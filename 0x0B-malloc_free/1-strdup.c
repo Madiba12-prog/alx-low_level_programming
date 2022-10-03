@@ -22,7 +22,6 @@ char *_strdup(char *str)
 		{
 			while (size--)
 				dup[size] = str[size];
-			
 			return (dup);
 		}
 	}
