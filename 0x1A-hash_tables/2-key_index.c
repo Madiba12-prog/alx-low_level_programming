@@ -1,20 +1,16 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - Hash function that implement djb2 algorithm.
- * @str: Key to aplied the transformation.
+ * key_index - Associate a index to a key.
+ * @key: Key to be indexed.
+ * @size: Size of the hash table.
  *
  * Return: Integer after the operations.
  */
-unsigned long int hash_djb2(const unsigned char *str)
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	unsigned long int hash;
-	int c;
+	unsigned long int result;
 
-	hash = 5381;
-	while ((c = *str++))
-	{
-		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
-	}
-	return (hash);
+	result = hash_djb2(key) % size;
+	return (result);
 }
